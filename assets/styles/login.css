@@ -95,6 +95,12 @@ a{
   font-size: 20px;
 }
 
+#warning{
+    font-size: 20px;
+    color: red;
+    display: none;
+}
+
 .btn-form{
     display: flex;
     flex-direction: column;
