@@ -381,3 +381,154 @@ main{
 .content-kelas a{
     width: 430px;
 }
+
+
+/* Matriks */
+.container-matriks{
+    padding: 64px 72px;
+    padding-top: 0px;
+}
+
+.matriks{
+    background-color: #0A0D0D;
+    border-radius: 16px;
+    padding: 48px 88px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 128px;
+    justify-content: center;
+}
+
+.content-matriks{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.content-matriks h2{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+.content-matriks p{
+    color: #B3B2B2;
+}
+
+
+/* Footer */
+footer{
+    background-color: #0A0D0D;
+}
+
+#container-footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 128px;
+    align-items: center;
+}
+
+#footer-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#footer-text img{
+    height: 70px;
+    width: auto;
+}
+
+#footer-text p{
+    width: 368px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: #B3B2B2;
+}
+
+#footer-sosmed ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 36px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-sosmed li{
+    padding: 10px;
+    height: 50px;
+    font-size: 36px;
+}
+
+#quick-link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 136px;
+}
+
+.quick-link-item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.quick-link-item h3{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.link-item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.link-item a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B3B2B2;
+}
+
+.link-item a:hover{
+    color: #FFFFFF;
+}
+
+
+/* Copy Right */
+#cp{
+    background-color: #0A0D0D;
+}
+
+hr{
+    background-color: #E2E9E9;
+    height: 2px;
+    margin: 0;
+}
+
+#copy-right-text{
+    color: #FFFFFF;
+    padding: 24px 0px;
+    font-weight: 500;
+}
