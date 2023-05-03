@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#sign-up{
+    background: linear-gradient(rgba(250,250,250, 0.3),
+    rgba(250,250,250, 0.2)), url(/assets/img/signup.jpg);
+    background-size: cover;
+    background-position: center; 
+    height: 100%; 
+}
+
+.container{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: #FFFFFF;
+    border-radius: 0px 70px 0px 0px;  
+    padding: 80px;
+}
+
+.container h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    text-align: center;
+}
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.list-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: auto;
+}
+
+.list-form label{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.list-form input{
+    padding: 16px 24px;
+    width: 480px;
+    height: 68px;
+    border: 2px solid #292828;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.content-form input::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+#forgetPass{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #676565;
+    text-align: end;
+    width: auto;
+}
+
+.btn-form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.btn-form .btn-primary{
+    width: auto;
+}
+
+.btn{
+    border-radius: 8px;
+    padding: 12px 32px;
+    text-align: center;
+    transition: all 0.3s;
+    font-weight: 500;
+    border: none;
+    font-size: 20px;
+}
+
+.btn-primary{
+    background-color: #0A0D0D;
+    color: #fff;
+}
+
+.btn-primary:hover{
+    color: #000;
+    background-color: #ededed;
+}
+
+.btn-form p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #676565;
+    text-align: center;
+}
+
+.btn-form span{
+    font-weight: 500;
+}
