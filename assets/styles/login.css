@@ -6,3 +6,140 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#login{
+    display: flex;
+}
+
+#login img{
+    width: 45%;
+    height: 100vh;
+    border-radius: 0px 70px 0px 0px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    margin: auto;
+    gap: 40px;
+}
+
+.right h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    text-align: center;
+}
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.list-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list-form label{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.list-form input{
+    padding: 16px 24px;
+    width: 514px;
+    height: 68px;
+    border: 2px solid #292828;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.content-form input::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+#forgetPass{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #676565;
+    text-align: end;
+    width: auto;
+}
+
+.btn-form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.btn-form .btn-primary{
+    width: auto;
+}
+
+.btn{
+    border-radius: 8px;
+    padding: 12px 32px;
+    text-align: center;
+    transition: all 0.3s;
+    font-weight: 500;
+    border: none;
+    font-size: 20px;
+}
+
+.btn-primary{
+    background-color: #0A0D0D;
+    color: #fff;
+}
+
+.btn-primary:hover{
+    color: #000;
+    background-color: #ededed;
+}
+
+.btn-form p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #676565;
+    text-align: center;
+}
+
+.btn-form span{
+    font-weight: 500;
+}
+
+@media (max-width: 1250px) {
+    #login img{
+        display: none;
+    }
+
+    #login{
+        background-image: url(/assets/img/login.jpg);
+        background-size: cover;
+        background-position: center;    
+        height: 100vh;
+    }
+
+    .right{
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.4px);
+        -webkit-backdrop-filter: blur(3.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
