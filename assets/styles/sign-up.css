@@ -22,7 +22,6 @@ a{
 
 .container{
     width: 55%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +43,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 28px;
+    width: 100%;
 }
 
 .list-form{
@@ -61,8 +61,7 @@ a{
 
 .list-form input{
     padding: 16px 24px;
-    width: 480px;
-    height: 68px;
+    width: 100%;
     border: 2px solid #292828;
     border-radius: 8px;
     font-size: 20px;
@@ -123,4 +122,19 @@ a{
 
 .btn-form span{
     font-weight: 500;
+}
+
+@media (max-width: 1250px) {
+    #sign-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .container{
+        width: 70%;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
 }
