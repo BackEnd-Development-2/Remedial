@@ -29,18 +29,14 @@ li{
     border: none;
 }
 
-.btn:hover{
-    transform: scale(0.95);
-}
-
 .btn-primary{
     background-color: #0A0D0D;
     color: #fff;
 }
 
 .btn-primary:hover{
-    border: 4px double #FFFFFF;
-    background-color: #0A0D0D;
+    color: #000;
+    background-color: #ededed;
 }
 
 .btn-secondary{
@@ -49,7 +45,7 @@ li{
 }
 
 .btn-secondary:hover{
-    border: 4px double #0A0D0D;
+    background-color: #0A0D0D;
 }
 
 .btn-ghost{
@@ -61,6 +57,11 @@ li{
     background-color: #F1F4F4;
     color: #000;
 }
+
+.btn-noBorder:hover{
+    font-weight: 700;
+}
+
 
 /* Navbar */
 
@@ -82,10 +83,26 @@ a.nav-link.active{
 .navbar-nav{
     justify-content: center;
     align-items: center;
+    display: flex;
+    gap: 28px;
 }
 
 .navbar-nav li{
-    padding-left: 40px;
+    transition: all 0.3s;
+    padding: 4px;
+}
+
+.navbar-nav li:hover{
+    background-color: #ededed;
+    border-radius: 4px;
+}
+
+.dropdown-menu li{
+    transition: all 0.1s;
+}
+
+.dropdown-menu li a:hover{
+    background-color: #ededed;
 }
 
 
@@ -126,26 +143,10 @@ main{
     max-width: 580px;
 }
 
-.button-hero{
-    font-size: 18px;
-    font-weight: 500;
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-}
-
 .button-hero .btn-secondary{
     width: 160px;
 }
 
-.button-hero .btn .btn-ghost{
-    width: 180px;
-}
-
-.banner img{
-    width: 430px;
-    height: 490px;
-}
 
 /* About Us */
 #container-aboutUs{
@@ -156,7 +157,6 @@ main{
 .aboutUs{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     gap: 80px;
     align-items: center;
     justify-content: center
@@ -206,6 +206,7 @@ main{
     align-items: flex-start;
     gap: 40px;
 }
+
 
 /* Keunggulan */
 #container-keunggulan{
@@ -379,174 +380,4 @@ main{
 
 .content-kelas a{
     width: 430px;
-}
-
-/* Matriks */
-
-.container-matriks{
-    padding: 64px 72px;
-    padding-top: 0px;
-}
-
-.matriks{
-    background-color: #0A0D0D;
-    border-radius: 16px;
-    padding: 48px 88px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 128px;
-    justify-content: center;
-}
-
-.content-matriks{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-}
-
-.content-matriks h2{
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 54px;
-    color: #FFFFFF;
-}
-
-.content-matriks p{
-    color: #B3B2B2;
-}
-
-/* Footer */
-footer{
-    background-color: #0A0D0D;
-}
-
-#container-footer{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-#footer-content{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 128px;
-    align-items: center;
-}
-
-#footer-desc{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-#footer-text{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-#footer-text img{
-    height: 70px;
-    width: auto;
-}
-
-#footer-text p{
-    width: 368px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: justify;
-    color: #B3B2B2;
-}
-
-#footer-sosmed ul{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 36px;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-#footer-sosmed li{
-    padding: 10px;
-    height: 50px;
-    font-size: 36px;
-}
-
-#quick-link{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 136px;
-}
-
-.quick-link-item{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.quick-link-item h3{
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 120%;
-}
-
-.link-item ul{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    padding: 0;
-    margin: 0;
-}
-
-.link-item a{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #B3B2B2;
-}
-
-.link-item a:hover{
-    color: #FFFFFF;
-}
-
-/* Copy Right */
-#cp{
-    background-color: #0A0D0D;
-}
-
-hr{
-    background-color: #E2E9E9;
-    height: 2px;
-    margin: 0;
-}
-
-#copy-right-text{
-    color: #FFFFFF;
-    padding: 24px 0px;
-    font-weight: 500;
-}
-
-
-@media (max-width: 992px) {
-    #hero{
-        gap: 40px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .navbar #menu, .navbar .button-nav{
-        display: none;
-    }
-
-    .navbar .toggle-btn{
-        display: block;
-    }
-
-    .responsive-menu{
-        display: block;
-    }
 }
