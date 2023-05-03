@@ -389,75 +389,100 @@
     
   }
 
-  /* CSS footer */
-  .container{
-    max-width: 100%;
-    margin:auto;
-  }
-  .row{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul{
-    list-style: none;
-  }
-  .footer{
-    background-color: #292828;;
-      padding: 30px;
-  }
-  .footer-col{
-    width: 25%;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-  }
+ /* Footer */
+footer{
+  background-color: #0A0D0D;
+}
 
-  .footer-col img {
-  margin-bottom: 10px;
-  }
+#container-footer{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
-  .footer-col h4{
-  font-size: 15px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-top: 15px;
-  font-weight: 500;
-  position: relative;
-  }
+#footer-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 128px;
+  align-items: center;
+}
 
-  .footer-col p {
-  font-size: 12px;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  margin: 0;
-  }
+#footer-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
-  .footer-col ul {
-  margin-top: 30px;
-  }
+#footer-text{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 
-  .footer-col ul li:not(:last-child){
-  margin-bottom: 10px;
-  }
+#footer-text img{
+  height: 70px;
+  width: auto;
+}
 
-  .footer-col ul li a{
-  font-size: 10px;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
+#footer-text p{
+  width: 368px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  color: #B3B2B2;
+}
+
+#footer-sosmed ul{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 36px;
   text-align: center;
-  }
+  padding: 0;
+  margin: 0;
+}
 
-  .footer-col ul li a:hover{
-  color: #ffffff;
-  padding-left: 8px;
-  }
+#footer-sosmed li{
+  padding: 10px;
+  height: 50px;
+  font-size: 36px;
+}
 
+#quick-link{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 136px;
+}
+
+.quick-link-item{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.quick-link-item h3{
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.link-item ul{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.link-item a{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #B3B2B2;
+}
+
+.link-item a:hover{
+  color: #FFFFFF;
+}
   
