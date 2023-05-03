@@ -9,6 +9,10 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="/assets/styles/login.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -20,11 +24,12 @@
             <form action="" class="content-form">
                 <div class="list-form">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Masukkan Email" name="email" id="email" />
+                    <input type="email" placeholder="Masukkan Email" name="email" id="email" required />
                 </div>
-                <div class="list-form">
+                <div class="list-form password-container">
                     <label for="password">Password</label>
-                    <input type="password" placeholder="Masukkan Password" name="password" id="password" />
+                    <input type="password" placeholder="Masukkan Password" name="password" id="password" required />
+                    <i class="fa-solid fa-eye" id="eye"></i>
                     <a href="" id="forgetPass">Lupa Password?</a>
                 </div>
                 <div class="btn-form">
