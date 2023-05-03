@@ -17,7 +17,7 @@ a{
 }
 
 #login img{
-    width: 45%;
+    width: 50%;
     height: 100vh;
     border-radius: 0px 70px 0px 0px;
 }
@@ -25,9 +25,10 @@ a{
 .right{
     display: flex;
     flex-direction: column;
-    padding: auto;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
+    width: 100%;
 }
 
 .right h1{
@@ -41,6 +42,8 @@ a{
     display: flex;
     flex-direction: column;
     gap: 28px;
+    width: 60%;
+    justify-content: center;
 }
 
 .list-form{
@@ -57,8 +60,8 @@ a{
 
 .list-form input{
     padding: 16px 24px;
-    width: 514px;
-    height: 68px;
+    box-sizing: border-box;
+    width: 100%;
     border: 2px solid #292828;
     border-radius: 8px;
     font-size: 20px;
@@ -70,6 +73,10 @@ a{
     line-height: 140%;
 }
 
+.password-container{
+  position: relative;
+}
+
 #forgetPass{
     font-weight: 400;
     font-size: 20px;
@@ -77,6 +84,15 @@ a{
     color: #676565;
     text-align: end;
     width: auto;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 45%;
+  right: 4%;
+  cursor: pointer;
+  color: lightgray;
+  font-size: 20px;
 }
 
 .btn-form{
@@ -131,9 +147,13 @@ a{
         background-size: cover;
         background-position: center;    
         height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .right{
+        width: 80%;
         padding: 40px;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 16px;
@@ -142,4 +162,14 @@ a{
         -webkit-backdrop-filter: blur(3.4px);
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
+
+    .content-form{
+        width: 80%;
+    }
+
+    #forgetPass, .btn-form p{
+        color: #292828;
+        font-weight: 500;
+    }
+
 }
