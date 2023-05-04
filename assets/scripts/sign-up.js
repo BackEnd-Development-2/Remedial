@@ -1,4 +1,13 @@
-import { eyePassword, eyeConfPassword } from "./eye-password.js";
+import { eyePassword } from "./eye-password.js";
+
+const conPasswordInput = document.querySelector("#co-password")
+const eyePasCon = document.querySelector("#eye-pasCon")
+
+eyePasCon.addEventListener("click", function(){
+    this.classList.toggle("fa-eye-slash")
+    const type = conPasswordInput.getAttribute("type") === "password" ? "text" : "password"
+    conPasswordInput.setAttribute("type", type)
+})
 
 const addDataUser = async (data) => {
     try {
