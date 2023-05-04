@@ -53,6 +53,7 @@
 
 
     <!--Konten-->
+    <div id="Click" >
     <div class="card w-10 m-2 ">
       <div class="row">
         <div class="col-md-6">
@@ -68,24 +69,9 @@
         </div>
       </div>
     </div>
+    </div>
     <!--JavaScript-->
-    <script defer>
-      const button = document.querySelector('.btn');
-      button.addEventListener('click', function() {
-        if (!isLoggedIn()) {
-          alert('Anda harus login terlebih dahulu');
-        } else {
-          window.location.href = 'link-kelas'; // ganti dengan link halaman kelas
-        }
-      });
-
-      function isLoggedIn() {
-        // ganti dengan kode untuk memeriksa apakah pengguna sudah login atau belum
-        // contoh: return true jika pengguna sudah login, false jika belum
-        return false;
-        }
-
-    </script>
+    <script src="Kelas.js" defer></script>
 
 
     <!--Konten2-->
@@ -109,7 +95,7 @@
         <form>
           <div class="form-group">
             <select class="form-control">
-              <option disabled selected> <h1></h1>Pilih Pelajaran Remedial</option>
+              <option disabled selected> <h1></h1>Pelajaran Remedial</option>
               <option>Puisi</option>
               <option>Musik</option>
               <option>Opera</option>
@@ -120,17 +106,10 @@
             <h5 for="waktu">Tanggal Mulai Kelas dan Waktu:</h5>
             <input type="datetime-local" class="form-control" id="waktu">
           </div>
-          <button type="submit" class="btn btn-secondary mt-3">Gabung Sekarang</button>
+          <a href="#Click" class="btn btn-secondary mt-3">Gabung Sekarang</a>
         </form>
       </div>
     </div>
-    <!--JavaScript-->
-    <script defer >
-      document.querySelector('button[type="submit"]').addEventListener("click", function() {
-      alert("Anda harus login terlebih dahulu");
-      });
-    </script>
-
 
      <!-- Footer -->
      <footer>
