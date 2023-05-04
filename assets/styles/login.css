@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#login{
+    display: flex;
+}
+
+#login img{
+    width: 50%;
+    height: 100vh;
+    border-radius: 0px 70px 0px 0px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.right h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    text-align: center;
+}
+
+.content-form{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 60%;
+    justify-content: center;
+}
+
+.list-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list-form label{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.list-form input{
+    padding: 16px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #CDCDCD;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+input:focus{
+    border-color: #0A0D0D;
+}
+
+.content-form input::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.password-container{
+  position: relative;
+}
+
+#forgetPass{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #676565;
+    text-align: end;
+    width: auto;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 66px;
+  right: 4%;
+  cursor: pointer;
+  color: lightgray;
+  font-size: 20px;
+}
+
+#warning{
+    font-size: 20px;
+    color: red;
+    display: none;
+}
+
+.btn-form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.btn-form .btn-primary{
+    width: auto;
+}
+
+.btn{
+    border-radius: 8px;
+    padding: 12px 32px;
+    text-align: center;
+    transition: all 0.3s;
+    font-weight: 500;
+    border: none;
+    font-size: 20px;
+}
+
+.btn-primary{
+    background-color: #0A0D0D;
+    color: #fff;
+}
+
+.btn-primary:hover{
+    color: #000;
+    background-color: #ededed;
+}
+
+.btn-form p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #676565;
+    text-align: center;
+}
+
+.btn-form span{
+    font-weight: 500;
+}
+
+@media (max-width: 1250px) {
+    #login img{
+        display: none;
+    }
+
+    #login{
+        background-image: url(/assets/img/login.jpg);
+        background-size: cover;
+        background-position: center;    
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right{
+        width: 80%;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.4px);
+        -webkit-backdrop-filter: blur(3.4px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .content-form{
+        width: 80%;
+    }
+
+    #forgetPass, .btn-form p{
+        color: #292828;
+        font-weight: 500;
+    }
+
+}
+
+input.invalid{
+    border-color: rgb(180, 27, 27);
+    background-color: #fdd;
+}
+
+.btn:disabled{
+    opacity: 0.6;
+}
+
+.btn:disabled:hover{
+    background: #0A0D0D;
+    color: #fff;
+}
+
+.error{
+    width: 100%;
+    height: 0;
+    padding: 0;
+    font-size: 18px;
+    color: rgb(180, 27, 27);
+}
+
+.error.active{
+    height: 100%;
+}
