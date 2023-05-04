@@ -1,7 +1,7 @@
 const button = document.querySelector('.btn');
       button.addEventListener('click', function() {
         if (!isLoggedIn()) {
-          alert('Anda harus login terlebih dahulu');
+          alert('Jika Ingin Mengikuti Kelas Ini, Silahkan Login Terlebih Dahulu');
         } else {
           window.location.href = 'link-kelas'; // ganti dengan link halaman kelas
         }
