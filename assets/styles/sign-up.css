@@ -62,9 +62,13 @@ a{
 .list-form input{
     padding: 12px 20px;
     width: 100%;
-    border: 2px solid #292828;
+    border: 2px solid #CDCDCD;
     border-radius: 8px;
     font-size: 20px;
+}
+
+input:focus{
+    border-color: #0A0D0D;
 }
 
 .content-form input::placeholder{
@@ -150,4 +154,30 @@ a{
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
+}
+
+input.invalid{
+    border-color: rgb(180, 27, 27);
+    background-color: #fdd;
+}
+
+.btn:disabled{
+    opacity: 0.6;
+}
+
+.btn:disabled:hover{
+    background: #0A0D0D;
+    color: #fff;
+}
+
+.error{
+    width: 100%;
+    display: none;
+    padding: 0;
+    font-size: 18px;
+    color: rgb(180, 27, 27);
+}
+
+.error.active{
+    display: block;
 }
