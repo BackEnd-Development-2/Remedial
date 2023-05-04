@@ -1,11 +1,5 @@
-const passwordInput = document.querySelector("#password")
-const eye = document.querySelector("#eye")
-
-eye.addEventListener("click", function(){
-    this.classList.toggle("fa-eye-slash")
-    const type = passwordInput.getAttribute("type") === "password" ? "text" : "password"
-    passwordInput.setAttribute("type", type)
-})
+import { emailValidation, passwordValidation } from "./form-validation.js"
+import { eyePassword } from "./eye-password.js"
 
 const getDataUser = async () => {
     const response = await fetch('https://645209d8bce0b0a0f73af0c9.mockapi.io/users')
@@ -24,7 +18,7 @@ const inputUser = {
 const checkLogin = async () => {
     const dataUsers = await getDataUser()
     
-    for (item of dataUsers) {
+    for (const item of dataUsers) {
         if (item.email === inputUser.email.value && item.password === inputUser.password.value){
           window.location.href = 'index.html'
           break
@@ -34,7 +28,7 @@ const checkLogin = async () => {
           warning.innerText = 'username atau password salah'
           break
         }
-      }
+    }
 }
 
 document.getElementById('submit').addEventListener('click', async () => {   
