@@ -30,24 +30,28 @@
                 </div>
                 <div class="list-form">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Masukkan Email" name="email" id="email" required />
+                    <input type="email" placeholder="Masukkan Email" name="email" id="email" required minlength="8" />
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 <div class="list-form password-container">
                     <label for="password">Password</label>
-                    <input type="password" placeholder="Masukkan Password" name="password" id="password" required />
+                    <input type="password" placeholder="Masukkan Password" name="password" id="password" required
+                        minlength="8" />
+                    <span class="error" aria-live="polite"></span>
                     <i class="fa-solid fa-eye" id="eye-pas"></i>
                 </div>
                 <div class="list-form password-container">
                     <label for="co-password">Konfirmasi Password</label>
                     <input type="password" placeholder="Masukkan Konfirmasi Password" name="co-password"
                         id="co-password" required />
+                    <span class="error" aria-live="polite"></span>
                     <i class="fa-solid fa-eye" id="eye-pasCon"></i>
                 </div>
                 <div class="btn-form">
-                    <div class="btn btn-primary" id="submit">Sign Up</div>
+                    <input type="button" class="btn btn-primary" id="submit" value="Sign Up">
                     <p>Sudah Punya Akun?
                         <span>
-                            <a href="">Sign In</a>
+                            <a href="login.html">Sign In</a>
                         </span>
                     </p>
                 </div>
