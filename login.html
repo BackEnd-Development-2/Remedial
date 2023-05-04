@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/assets/styles/login.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Script JS -->
+    <script defer src="/assets/scripts/login.js" type="module"></script>
+
+</head>
+
+<body>
+    <div id="login">
+        <img src="/assets/img/login.jpg" alt="">
+        <div class="right">
+            <h1>Welcome Back</h1>
+
+            <form action="" class="content-form" id="login-form">
+                <div class="list-form">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Masukkan Email" name="email" id="email" required minlength="8" />
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="list-form password-container">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Masukkan Password" name="password" id="password" required
+                        minlength="8" />
+                    <span class="error" aria-live="polite"></span>
+                    <i class="fa-solid fa-eye" id="eye"></i>
+                </div>
+                <div class="btn-form">
+                    <input type="button" class="btn btn-primary" id="submit" value="Sign In">
+                    <p>Belum Punya Akun?
+                        <span>
+                            <a href="sign-up.html">Sign Up</a>
+                        </span>
+                    </p>
+                </div>
+            </form>
+            <div id="warning">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
