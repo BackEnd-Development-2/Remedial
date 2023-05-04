@@ -54,14 +54,8 @@ li{
 }
 
 .btn-ghost:hover{
-    background-color: #F1F4F4;
-    color: #000;
+    border-color: #0A0D0D;
 }
-
-.btn-noBorder:hover{
-    font-weight: 700;
-}
-
 
 /* Navbar */
 
@@ -70,21 +64,13 @@ li{
     height: 40px;
 }
 
-.navbar{
+.navbar-nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 12px;
 }
 
 a.nav-link.active{
     font-weight: 700;
-}
-
-.navbar-nav{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 28px;
 }
 
 .navbar-nav li{
@@ -105,6 +91,10 @@ a.nav-link.active{
     background-color: #ededed;
 }
 
+.button-nav{
+    display: flex;
+    gap: 12px;
+}
 
 /* Hero Banner */
 main{
