@@ -34,7 +34,7 @@ li{
     color: #fff;
 }
 
-.btn-primary:hover{
+.btn.btn-primary:active, .btn-primary:hover{
     color: #000;
     background-color: #ededed;
 }
@@ -44,7 +44,7 @@ li{
     color: #000;
 }
 
-.btn-secondary:hover{
+.btn.btn-secondary:active, .btn-secondary:hover{
     background-color: #0A0D0D;
 }
 
@@ -53,11 +53,16 @@ li{
     border: 2px solid #E6E5E5;
 }
 
-.btn-ghost:hover{
+.btn.btn-ghost:active, .btn-ghost:hover{
     border-color: #0A0D0D;
 }
 
 /* Navbar */
+
+#container-navbar{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(67, 123, 213, 0.1);
+}
 
 #logo{
     width: auto;
