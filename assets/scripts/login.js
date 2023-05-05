@@ -44,7 +44,7 @@ const checkLogin = async () => {
     })
 
     if (a !== undefined){
-        window.location.href = 'index.html'
+        window.location.href = 'home-user.html?username=' + a.nama;
     } else {
         const warning = document.getElementById('warning')
         warning.style.display = 'block'
