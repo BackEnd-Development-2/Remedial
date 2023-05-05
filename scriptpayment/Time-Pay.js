@@ -1,6 +1,6 @@
 // Set waktu akhir menjadi 1 menit dari sekarang
 var countDownDate = new Date();
-countDownDate.setMinutes(countDownDate.getMinutes() + 2);
+countDownDate.setMinutes(countDownDate.getMinutes() + 1);
 
 // Update waktu setiap 1 detik
 var x = setInterval(function() {
@@ -18,9 +18,11 @@ var x = setInterval(function() {
   // Tampilkan waktu dalam format "menit:detik"
   document.getElementById("Time-Pay").innerHTML = "Selesaikan Pembayaran dalam " + minutes + ":" + seconds;
 
-  // Jika waktu sudah berakhir, tampilkan pesan
+  // Jika waktu sudah berakhir, tampilkan pesan dan pindahkan ke halaman "checkout.html"
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("Time-Pay").innerHTML = "Waktu telah berakhir";
-  }
+    window.location.href = "Kelas Online.html";
+}
+
 }, 1000);
