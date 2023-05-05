@@ -22,7 +22,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("Time-Pay").innerHTML = "Waktu telah berakhir";
-    window.location.href = "Kelas Online.html";
+    window.location.href = "SuksesPayment.html";
 }
 
 }, 1000);
