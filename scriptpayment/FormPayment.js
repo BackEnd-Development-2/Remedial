@@ -12,7 +12,7 @@ form.addEventListener('submit', event => {
     if (response.ok) {
       alert('Form submitted successfully');
       form.reset();
-      window.location.href = "PaymentNotifOffline.html";
+      window.location.href = "DetailPayment.html";
     } else {
       throw new Error('Form submission failed');
     }

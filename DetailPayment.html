@@ -90,138 +90,83 @@
       </div>
     </nav>
 
-    <!-- Form Payment/Detail Pembayaran-->
-    <div class="container mt-5">
-      <form id="error-container" class="row">
-        <div class="col-md-8">
-          <h3 class="title">Detail Pembayaran</h3>
 
-          <div class="form-group mb-3">
-            <label for="full-name">Full Name:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="full-name"
-              placeholder="Udin"
-              required
-            />
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="gender">Jenis Kelamin:</label>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gender"
-                id="male"
-                value="male"
-              />
-              <label class="form-check-label" for="male"> Laki-laki </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gender"
-                id="female"
-                value="female"
-              />
-              <label class="form-check-label" for="female"> Perempuan </label>
-            </div>
-          </div>
-
-          <div class="form-row mb-3">
-            <div class="form-group col-md-6">
-              <label for="phone">Nomor Telepon</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1">+62</span>
-                </div>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                  placeholder="Masukkan nomor telepon"
-                  required
-                />
+        <!--Payment-->
+        <div class="container">
+            <form>
+              <div class="row mb-5 mt-5 ml-5 mr-5 m-5" >
+                <div class="col-md-8 mx-auto">
+                  <div class="card">
+                    <div class="card-body">
+                      <div>
+                        <img src="Offline.png" class="img-fluid mb-2" alt="gambar responsif" />
+                      </div>
+                      <div>
+                        <h3 class="card-title">Remedial Offline</h3>
+                        <p class="card-text mb-3" id="Price">Rp. 250.000</p>
+                      </div>
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Coupon</h5>
+              <div class="input-group d-flex align-items-center">
+                <input type="text" class="form-control" id="Coupon-Discount" placeholder="Enter coupon code" />
+                <button class="btn btn-secondary" id="Submit-Discount" type="button">
+                  Apply
+                </button>
               </div>
             </div>
           </div>
-
-          <div class="form-group mb-3">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="example@example.com"
-              required
-            />
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="address">Asal Sekolah/Instansi</label>
-            <input
-              type="text"
-              class="form-control"
-              id="address"
-              placeholder="Universitas/Sekolah"
-            />
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="address">Alamat Rumah</label>
-            <input
-              type="text"
-              class="form-control"
-              id="address"
-              placeholder="Room - Street - Locality"
-            />
-          </div>
-
-          <div class="form-group mb-3">
-            <label for="city">Kota</label>
-            <input
-              type="text"
-              class="form-control"
-              id="city"
-              placeholder="Kota"
-            />
-          </div>
-
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="state">Alasan Mengikuti Program</label>
-              <input
-                type="text"
-                class="form-control"
-                id="state"
-                placeholder="Karena...."
-              />
+  
+          <div class="form-group mt-2">
+            <div class="mb-2">
+              <label for="cards-accepted">Payment Accepted:</label>
             </div>
-
-            <div class="form-group col-md-6">
-              <div class="form-group mt-3">
-                <label for="exampleFormControlFile1 ">Upload Portofolio</label>
-                <input
-                  type="file"
-                  class="form-control-file"
-                  id="exampleFormControlFile1"
-                />
+  
+            <div class="d-flex align-items-center mb-2">
+              <div class="col-md-2 m-1">
+                <img src="icon/Dana.png" alt="Dana" class="img-fluid" />
+              </div>
+              <div class="col-md-2 m-1">
+                <img src="icon/Gopay.png" alt="Gopay" class="img-fluid" />
+              </div>
+              <div class="col-md-2 m-1">
+                <img src="icon/ovo.png" alt="Bca" class="img-fluid" />
+              </div>
+              <div class="col-md-2 m-1">
+                <img src="icon/ShopeePay.png" alt="Mandiri" class="img-fluid" />
+              </div>
+              <div class="col-md-2 m-1">
+                <img src="icon/LinkAja.png" alt="LinkAja" class="img-fluid" />
               </div>
             </div>
           </div>
+  
+          <div class="form-group mb-3">
+            <label for="payment-method">Payment Method</label>
+            <select class="form-control" id="payment-method" >
+              <option selected >Choose Payment Method</option>
+              <option value="Dana">Dana</option>
+              <option value="Gopay">Gopay</option>
+              <option value="LinkAja">LinkAja</option>
+              <option value="Ovo">Ovo</option>
+              <option value="ShopeePay">ShopeePay</option>
+            </select>
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="ewallet-account-number">E-wallet Account Number</label>
+            <input type="text" class="form-control" id="ewallet-account-number" placeholder="Enter E-wallet Account Number" />
+          </div>
+          <div class="mb-5 text-center id="my-form">
+            <button type="submit" class="btn btn-secondary" id="Payment">Checkout</button>
+          </div>
         </div>
-        <script src="scriptpayment/FormPayment.js"></script>
-
-        <div class="col-md-6 mb-5" id="my-form">
-          <button type="submit" class="btn btn-secondary mt-3" id="Payment">
-            Checkout
-          </button>
-        </div>
-      </form>
+      </div>
     </div>
+  </div>
+</form>
+</div>
+  
 
     <!-- Footer -->
     <footer>
