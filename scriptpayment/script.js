@@ -34,7 +34,7 @@ paymentButton.addEventListener('click', function() {
       alert(`Pembayaran berhasil menggunakan ${paymentMethod} dengan nomor akun ${ewalletAccountNumber}`);
       // mengosongkan nomor akun e-wallet
       document.getElementById('ewallet-account-number').value = '';
-      window.location.href = "PaymentNotifOffline.html";
+      window.location.href = "DetailPayment.html";
     } else {
       alert('Nomor akun e-wallet harus diisi');
     }
