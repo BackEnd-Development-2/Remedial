@@ -1,3 +1,10 @@
+let params = new URLSearchParams(window.location.search);
+let bayar = params.get("bayar");
+
+if (bayar) {
+    document.getElementById('bayar').textContent = `Rp.${bayar}`
+}
+
 // Set waktu akhir menjadi 1 menit dari sekarang
 const countDownDate = new Date();
 countDownDate.setMinutes(countDownDate.getMinutes() + 1);
@@ -22,7 +29,7 @@ const x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("Time-Pay").innerHTML = "Waktu telah berakhir";
-    window.location.href = "SuksesPayment.html";
+    window.location.href = "SuksesPayment.html?bayar=" + bayar;
 }
 
 }, 1000);

@@ -15,20 +15,20 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="container-navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="container-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="/assets/img/logo-remedial.png" alt="" id="logo"></a>
+            <a class="navbar-brand" href="home-user.html"><img src="/assets/img/logo-remedial.png" alt="" id="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="home-user.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Tentang Kami.html">Tentang Kami</a>
+                        <a class="nav-link" href="Tentang Kami-user.html">Tentang Kami</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
@@ -37,19 +37,23 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Kelas Online</a></li>
-                            <li><a class="dropdown-item" href="Kelas Offline.html">Kelas Offline</a></li>
+                            <li><a class="dropdown-item" href="Kelas Offline-user.html">Kelas Offline</a></li>
                         </ul>
                     </li>
-                    <div class="button-nav nav-item">
-                        <a href="login.html" class="btn btn-ghost">Sign In</a>
-                        <a href="sign-up.html" class="btn btn-primary">Sign Up</a>
-                    </div>
+                    <li class="nav-item dropdown p-0">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div id="circle">
+                                <img src="/assets/img/user.jpg" alt="">
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
 
     <!--Konten-->
     <div id="Click" style="margin-top: 80px;">
@@ -70,9 +74,8 @@
     </div>
     </div>
 
-
-      <!--Tentang Kelas dan-->
-      <div class="row" id="tentang-kelas">
+    <!--Tentang Kelas dan-->
+    <div class="row" id="tentang-kelas">
         <div class="col-md-6">
           <div class="card m-3">
             <div class="card-body">
@@ -118,7 +121,7 @@
                   <h5 for="waktu">Tanggal Mulai Kelas dan Waktu:</h5>
                   <input type="datetime-local" class="form-control" id="waktu">
                 </div>
-                <a href="login.html" class="btn btn-primary mt-3">Gabung Sekarang</a>
+                <a href="PaymenK.Online.html" class="btn btn-primary mt-3">Gabung Sekarang</a>
           </form>
           </div>
         </div>

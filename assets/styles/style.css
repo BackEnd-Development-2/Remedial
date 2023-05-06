@@ -34,7 +34,7 @@ li{
     color: #fff;
 }
 
-.btn-primary:hover{
+.btn.btn-primary:active, .btn-primary:hover{
     color: #000;
     background-color: #ededed;
 }
@@ -44,7 +44,7 @@ li{
     color: #000;
 }
 
-.btn-secondary:hover{
+.btn.btn-secondary:active, .btn-secondary:hover{
     background-color: #0A0D0D;
 }
 
@@ -53,38 +53,29 @@ li{
     border: 2px solid #E6E5E5;
 }
 
-.btn-ghost:hover{
-    background-color: #F1F4F4;
-    color: #000;
+.btn.btn-ghost:active, .btn-ghost:hover{
+    border-color: #0A0D0D;
 }
-
-.btn-noBorder:hover{
-    font-weight: 700;
-}
-
 
 /* Navbar */
+
+#container-navbar{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(67, 123, 213, 0.1);
+}
 
 #logo{
     width: auto;
     height: 40px;
 }
 
-.navbar{
+.navbar-nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 12px;
 }
 
 a.nav-link.active{
     font-weight: 700;
-}
-
-.navbar-nav{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 28px;
 }
 
 .navbar-nav li{
@@ -105,6 +96,10 @@ a.nav-link.active{
     background-color: #ededed;
 }
 
+.button-nav{
+    display: flex;
+    gap: 12px;
+}
 
 /* Hero Banner */
 main{
