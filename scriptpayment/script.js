@@ -25,7 +25,7 @@ paymentButton.addEventListener('click', function() {
   const paymentMethod = document.getElementById('payment-method').value;
 
   // jika payment method adalah Dana atau Gopay
-  if (paymentMethod === 'Dana' || paymentMethod === 'Gopay' || paymentMethod === 'LinkAja' || paymentMethod === 'Ovo' || paymentMethod === 'ShopeePay' ) {
+  if (paymentMethod === 'Dana' || paymentMethod === 'Gopay') {
     // mendapatkan nilai nomor akun e-wallet
     const ewalletAccountNumber = document.getElementById('ewallet-account-number').value;
     // jika nomor akun e-wallet tidak kosong
@@ -34,11 +34,12 @@ paymentButton.addEventListener('click', function() {
       alert(`Pembayaran berhasil menggunakan ${paymentMethod} dengan nomor akun ${ewalletAccountNumber}`);
       // mengosongkan nomor akun e-wallet
       document.getElementById('ewallet-account-number').value = '';
-      window.location.href = "DetailPayment.html";
+      window.location.href = "PaymentNotifOffline.html";
     } else {
       alert('Nomor akun e-wallet harus diisi');
     }
   } else {
     alert(`Anda memilih ${paymentMethod}`);
+    window.location.href = "PaymentNotifOffline.html";
   }
 });
